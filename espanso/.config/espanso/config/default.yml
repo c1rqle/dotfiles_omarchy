@@ -8,7 +8,7 @@
 
 # ____________________________________________
 # Disable keyboard shortcut for the GUI window 
-  search_shortcut: CTRL+ALT+Space
+  search_shortcut: CTRL+ALT+ENTER
 
 # ____________________________________________
 # Disable the icon in the menu
@@ -25,7 +25,7 @@
 # ____________________________________________
 # How many backspace espanso tracks to correct misspelled keywordsMaximum number of backspace 
 # presses espanso keeps track of. For example, this is needed to correctly expand even if typos are typed.
-  backspace_limit: 50
+  backspace_limit: 999
 
 # ____________________________________________
 # If true, Espanso will attempt to preserve the previous clipboard content after an expansion has taken place.
@@ -43,7 +43,10 @@
 # ____________________________________________
 # Wayland/Hyprland specific optimizations
 # Use a short delay for clipboard operations to ensure reliability
-  clipboard_delay: 25
+  clipboard_delay: 15
+  inject_delay: 0
+  key_delay: 0
+  evdev_modifier_delay: 0
 
 # Enable secure input detection for better Wayland compatibility
   secure_input_notification: true

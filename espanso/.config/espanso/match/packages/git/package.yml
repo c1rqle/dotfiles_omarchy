@@ -6,13 +6,13 @@
     replace: "git status"
 
   - trigger: "git."
-    replace: "git add ."
+    replace: "git add $|$ "
 
-  - trigger: "gitc"
+  - trigger: "gitm"
     replace: "git commit -m '$|$' "
 
   - trigger: "gitp"
-    replace: "git push origin"
+    replace: "git push"
   
   - trigger: "gitmain"
     replace: "git checkout main"
