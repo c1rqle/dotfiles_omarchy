@@ -1,0 +1,15 @@
+.git
+.gitignore
+README
+LICENSE
+*.md
+*.txt
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.sh
+*.bak
+*.swp
+__pycache__
+

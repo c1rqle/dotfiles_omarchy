@@ -1,0 +1,32 @@
+#___________________________
+# Margins and paddings
+  window-inherit-font-size  = true
+  window-padding-balance    = false
+  window-padding-color      = extend
+  window-padding-x          = 14,14
+  window-padding-y          = 14,14
+
+#___________________________
+# Visuals
+  #theme = Hardcore
+  window-theme = ghostty
+  adjust-underline-thickness  = 1
+  adjust-underline-position   = 2
+  background-opacity          = 0.94
+  background-blur             = true
+  bold-is-bright              = true
+  minimum-contrast            = 1
+  confirm-close-surface=false
+  resize-overlay = never
+  gtk-toolbar-style = flat
+
+#___________________________
+# Cursor
+  cursor-style             = bar
+  adjust-cursor-thickness  = 2
+  adjust-cursor-height     = 2
+  cursor-opacity           = 1
+  cursor-style-blink       = true
+  cursor-color             = #FFC7FF
+  cursor-text              = #2F092E
+ # shell-integration-features = no-cursor

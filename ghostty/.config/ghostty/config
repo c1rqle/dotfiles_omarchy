@@ -1,0 +1,30 @@
+# __________________________
+# Configuration Management
+  config-file = "looknfeel"
+  config-file = "keybinds"
+  config-file = "fonts"
+
+# __________________________
+# Dynamic theme colors
+  config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
+  confirm-close-surface=false
+  resize-overlay = never
+  gtk-toolbar-style = flat
+  shell-integration = zsh
+# Cursor styling + SSH session terminfo
+# (all shell integration options must be passed together)
+shell-integration-features = no-cursor,ssh-env
+#___________________________
+# General settings
+  copy-on-select                  = true
+  clipboard-paste-protection      = true
+  clipboard-trim-trailing-spaces  = true
+  quit-after-last-window-closed   = true
+  app-notifications               = clipboard-copy
+  desktop-notifications           = true
+  focus-follows-mouse             = true
+  enquiry-response                = "" 
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95

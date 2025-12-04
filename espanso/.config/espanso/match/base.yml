@@ -1,0 +1,41 @@
+# espanso match file
+
+  matches:
+
+# ____________________________________________
+# Scrcpy - open external display + the most stable keyboard/mouse options
+  - trigger: ":scrcpy-sdk"
+    replace: "scrcpy --disable-screensaver --keyboard sdk --mouse sdk --new-display"
+
+# ____________________________________________
+# Terminal 
+  - trigger: ":logout"
+    replace: "loginctl kill-user tb"
+
+  - trigger: ":bt"
+    replace: "bzmenu -l walker"
+
+  - trigger: "icat"
+    replace: "kitty +kitten icat $|$"
+    word: true
+
+  - trigger: ":mkdir"
+    replace: "mkdir -p {{form1.folder}} && cd {{form1.folder}}"
+    vars:
+      - name: form1
+        type: form
+        params:
+          layout: "Folder name: [[folder]]"
+
+  - trigger: ":div"
+    replace: "<div>$|$</div> "
+
+  - trigger: ":grep"
+    replace: "| grep '$|$' "
+
+  - trigger: ":less"
+    replace: "| less "
+
+  - trigger: ':btctl'
+    replace: 'bluetoothctl'
+

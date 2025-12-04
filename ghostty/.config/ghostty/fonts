@@ -1,0 +1,11 @@
+# Font
+#font-family = "JetBrainsMono Nerd Font"
+font-family = "Operator Mono Book Nerd Font Complete"
+font-family-italic = "Operator Mono Book Italic Nerd Font Complete"
+font-family-bold = "Operator Mono Bold Nerd Font Complete"
+font-family-bold-italic = "Operator Mono Bold Italic Nerd Font Complete"
+
+# _____________________________
+  font-size = 12
+  adjust-cell-height = 45%
+  font-synthetic-style = false
