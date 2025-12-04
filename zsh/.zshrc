@@ -6,9 +6,17 @@
 
 #_____________________________________
 # Starship handles most of the appearance. LS_COLORS and LSD are for bonus colours :)
-  export LS_COLORS="$(vivid generate rose-pine-moon)"
+  export LS_COLORS="$(vivid generate dracula)"
 
 #_____________________________________
+# oh-my-zsh update behaviour
+  zstyle ':omz:update' mode auto
+
+#_____________________________________
+#1. autocd=removes need for 'cd'. #2. extendglob=extra pattern operators like ^, ~, etc. in filename patterns. 
+#3. nomatch=print error instead of passing command if no match. #4. notify=Makes background job status 
+# messages appear immediately when they change. 
+#5. unsetopt beep turns off the terminal bell #6. bindkey -v switches the line editor to vi mode
   setopt autocd extendedglob nomatch notify
   unsetopt beep
   bindkey -v
@@ -27,21 +35,14 @@
   compinit
 
 #_____________________________________
-# oh-my-zsh update behaviour
-  zstyle ':omz:update' mode auto
-
-#_____________________________________
-# This makes repository status check much faster.
+# makes the Oh My Zsh Git prompt stop counting untracked files as “dirty” when 
+# it runs git status to build the prompt. This makes repository status check much faster.
   DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 #_____________________________________
 # ZSH plugins
  ZSH_CUSTOM=~/.config/zsh_custom
  plugins=(git fzf colored-man-pages tmux zoxide)
-
-#_____________________________________
-# Loading my aliases
-  [ -f ~/.config/zsh_custom/aliases.zsh ] && source ~/.config/zsh_custom/aliases.zsh
 
 #_____________________________________
  source $ZSH/oh-my-zsh.sh
@@ -56,9 +57,13 @@
   fi
 
 #_____________________________________
-# Compilation flags
+# Compiler flag so that anything built from source targets your machine’s CPU architecture.
   export ARCHFLAGS="-arch $(uname -m)"
  
+#_____________________________________
+# Loading my aliases
+  [ -f ~/.config/zsh_custom/aliases.zsh ] && source ~/.config/zsh_custom/aliases.zsh
+
 #_____________________________________
 # Activating zoxide and changing shortcut to "c". Also starship
   eval "$(zoxide init --cmd c zsh)"
