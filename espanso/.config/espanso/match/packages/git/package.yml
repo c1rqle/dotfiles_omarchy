@@ -8,7 +8,7 @@
   - trigger: "git."
     replace: "git add ."
 
-  - trigger: "gitm"
+  - trigger: "gitc"
     replace: "git commit -m '$|$' "
 
   - trigger: "gitp"
