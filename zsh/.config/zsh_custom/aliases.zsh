@@ -11,9 +11,12 @@
   alias vim='nvim'
   alias mkdir='mkdir -p'
 
-#____________________________
-# Image related
-  alias img='tacentview'
+  alias vpn='sudo surfshark-vpn'
+  alias vpnoff='sudo surfshark-vpn down'
+
+  alias sysctl='sudo systemctl'
+  alias nm='sudo NetworkManager'
+
 
 # ___________________________ 
 # -X=sort by extension. F=classify type. t=Sort by time. r=reverse sort
