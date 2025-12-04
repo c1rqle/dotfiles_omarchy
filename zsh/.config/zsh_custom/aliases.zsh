@@ -4,6 +4,8 @@
   alias zz='...'
   alias zzz='....'
   alias ..='cd ..'
+  alias .2='...'
+  alias .3='....'
 
 #____________________________
   alias vim='nvim'
@@ -11,9 +13,7 @@
 
 #____________________________
 # Image related
-  alias icat='kitty +kitten icat'
   alias img='tacentview'
-  alias q='qview'
 
 # ___________________________ 
 # -X=sort by extension. F=classify type. t=Sort by time. r=reverse sort
