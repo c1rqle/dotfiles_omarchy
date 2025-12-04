@@ -52,7 +52,6 @@
     - name
   # - git
   ignore-globs:
-    - .git
     - .bashrc
     - .lesshst
     - .bash_profile
