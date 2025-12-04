@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
 #_____________________________________
 # Path to your Oh My Zsh installation.
   export ZSH="$HOME/.oh-my-zsh"
@@ -9,7 +6,7 @@
 
 #_____________________________________
 # Starship handles most of the appearance. LS_COLORS and LSD are for bonus colours :)
-  export LS_COLORS="$(vivid generate tokyonight-night)"
+  export LS_COLORS="$(vivid generate rose-pine-moon)"
 
 #_____________________________________
   setopt autocd extendedglob nomatch notify
@@ -31,11 +28,7 @@
 
 #_____________________________________
 # oh-my-zsh update behaviour
-  zstyle ':omz:update' mode reminder
-
-#_____________________________________
-# Disable autocorrect. I find it incredibly annoying.
-  ENABLE_CORRECTION="false"
+  zstyle ':omz:update' mode auto
 
 #_____________________________________
 # This makes repository status check much faster.
@@ -67,6 +60,7 @@
   export ARCHFLAGS="-arch $(uname -m)"
  
 #_____________________________________
-# Activating zoxide and changing shortcut to "c"
+# Activating zoxide and changing shortcut to "c". Also starship
   eval "$(zoxide init --cmd c zsh)"
   eval "$(starship init zsh)"
+
