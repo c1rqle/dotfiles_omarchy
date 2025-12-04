@@ -3,51 +3,51 @@
 
 # ____________________________________________
 # Specify Norwegian keyboard. Solves a few bugs
-  keyboard_layout:
-    layout: "no"
+keyboard_layout:
+  layout: "no"
 
 # ____________________________________________
-# Disable keyboard shortcut for the GUI window 
-  search_shortcut: CTRL+ALT+ENTER
+# Disable keyboard shortcut for the GUI window
+search_shortcut: CTRL+ALT+ENTER
 
 # ____________________________________________
 # Disable the icon in the menu
-  show_icon: false
+show_icon: false
 
 # ____________________________________________
 # Auto restart Espanso on file change
-  Auto-restart: true
+Auto-restart: true
 
 # ____________________________________________
 # Revert an expansion if clicking backspace
-  undo_backspace: true
+undo_backspace: true
 
 # ____________________________________________
-# How many backspace espanso tracks to correct misspelled keywordsMaximum number of backspace 
+# How many backspace espanso tracks to correct misspelled keywordsMaximum number of backspace
 # presses espanso keeps track of. For example, this is needed to correctly expand even if typos are typed.
-  backspace_limit: 999
+backspace_limit: 999
 
 # ____________________________________________
 # If true, Espanso will attempt to preserve the previous clipboard content after an expansion has taken place.
-  preserve_clipboard: true
+preserve_clipboard: true
 
 # ____________________________________________
 # Toggle Espanso on/off
-  toggle_key: off
+toggle_key: off
 
 # ____________________________________________
 # clipboard, inject or auto (auto is default)
 # Using clipboard backend for better Wayland/Hyprland compatibility
-  backend: auto
+backend: clipboard
 
 # ____________________________________________
 # Wayland/Hyprland specific optimizations
 # Use a short delay for clipboard operations to ensure reliability
-  clipboard_delay: 15
-  inject_delay: 0
-  key_delay: 0
-  evdev_modifier_delay: 0
+clipboard_delay: 25
+inject_delay: 0
+key_delay: 0
+evdev_modifier_delay: 0
 
 # Enable secure input detection for better Wayland compatibility
-  secure_input_notification: true
-  #
+secure_input_notification: true
+#
