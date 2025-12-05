@@ -6,7 +6,7 @@
 
 #_____________________________________
 # Starship handles most of the appearance. LS_COLORS and LSD are for bonus colours :)
-  export LS_COLORS="$(vivid generate dracula)"
+#  export LS_COLORS="$(vivid generate dracula)"
 
 #_____________________________________
 # oh-my-zsh update behaviour
@@ -68,4 +68,5 @@
 # Activating zoxide and changing shortcut to "c". Also starship
   eval "$(zoxide init --cmd c zsh)"
   eval "$(starship init zsh)"
+  export STARSHIP_CONFIG=~/.config/starship/starship.toml
 

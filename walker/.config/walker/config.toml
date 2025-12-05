@@ -29,17 +29,17 @@ prefix = "."
 provider = "files"
 
 [[providers.prefixes]]
-prefix = ":"
+prefix = "::"
 provider = "symbols"
 
 [[providers.prefixes]]
-prefix = "="
+prefix = "=="
 provider = "calc"
 
 [[providers.prefixes]]
-prefix = "@"
+prefix = "s:"
 provider = "websearch"
 
 [[providers.prefixes]]
-prefix = "$"
+prefix = ","
 provider = "clipboard"

@@ -4,7 +4,7 @@
   window-padding-balance    = false
   window-padding-color      = extend
   window-padding-x          = 14,14
-  window-padding-y          = 5,5
+  window-padding-y          = 3,7
 
 #___________________________
 # Visuals
