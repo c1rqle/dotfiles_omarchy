@@ -7,7 +7,6 @@
 # __________________________
 # Dynamic theme colors
   config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
-
   confirm-close-surface=false
   resize-overlay = never
   gtk-toolbar-style = flat
@@ -15,6 +14,7 @@
 # Cursor styling + SSH session terminfo
 # (all shell integration options must be passed together)
 shell-integration-features = no-cursor,ssh-env
+
 #___________________________
 # General settings
   copy-on-select                  = true
