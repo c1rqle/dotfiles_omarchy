@@ -2,7 +2,7 @@
 add_newline = true
 
 [character]
-success_symbol = '[⇝ ](bold #18e699)'
+success_symbol = '[􂨪  ](bold #f5ab82)'
 error_symbol = "[x ](bold red)"
 
 [git_status]
@@ -26,7 +26,7 @@ disabled = true
 read_only = "(read only)"
 truncation_length = 2
 truncation_symbol = "…/"
-repo_root_style = "italic #18e699"
+repo_root_style = "bold italic #18e699"
 repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 
 [git_metrics]
@@ -35,4 +35,4 @@ format = '([+$added]($added_style)) ([-$deleted]($deleted_style)) '
 
 [git_branch]
 format = "[$branch]($style) "
-style = "bold #f5ab82"
+style = "italic #f5ab82"
