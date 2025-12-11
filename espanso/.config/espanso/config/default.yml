@@ -8,7 +8,7 @@ keyboard_layout:
 
 # ____________________________________________
 # Disable keyboard shortcut for the GUI window
-search_shortcut: CTRL+ALT+ENTER
+search_shortcut: META+ALT+ENTER
 
 # ____________________________________________
 # Disable the icon in the menu
@@ -20,7 +20,7 @@ Auto-restart: true
 
 # ____________________________________________
 # Revert an expansion if clicking backspace
-undo_backspace: true
+undo_backspace: false
 
 # ____________________________________________
 # How many backspace espanso tracks to correct misspelled keywordsMaximum number of backspace
@@ -38,15 +38,16 @@ toggle_key: off
 # ____________________________________________
 # clipboard, inject or auto (auto is default)
 # Using clipboard backend for better Wayland/Hyprland compatibility
-backend: clipboard
+#backend: clipboard
+backend: auto
 
 # ____________________________________________
 # Wayland/Hyprland specific optimizations
 # Use a short delay for clipboard operations to ensure reliability
 clipboard_delay: 25
-inject_delay: 0
-key_delay: 0
-evdev_modifier_delay: 0
+inject_delay: 1
+key_delay: 1
+evdev_modifier_delay: 1
 
 # Enable secure input detection for better Wayland compatibility
 secure_input_notification: true

@@ -1,14 +1,13 @@
 # espanso match file
 
-  matches:
-
-# ____________________________________________
-# Scrcpy - open external display + the most stable keyboard/mouse options
+matches:
+  # ____________________________________________
+  # Scrcpy - open external display + the most stable keyboard/mouse options
   - trigger: ":scrcpy-sdk"
     replace: "scrcpy --disable-screensaver --keyboard sdk --mouse sdk --new-display"
 
-# ____________________________________________
-# Terminal 
+  # ____________________________________________
+  # Terminal
   - trigger: ":logout"
     replace: "loginctl kill-user tb"
 
@@ -36,6 +35,8 @@
   - trigger: ":less"
     replace: "| less "
 
-  - trigger: ':btctl'
-    replace: 'bluetoothctl'
+  - trigger: ":btctl"
+    replace: "bluetoothctl"
 
+  - trigger: ":cht"
+    replace: "curl cheat.sh/"

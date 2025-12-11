@@ -2,7 +2,7 @@
 add_newline = true
 
 [character]
-success_symbol = '[􂨪  ](bold #f5ab82)'
+success_symbol = ' [􂨪  ](#18e699)'
 error_symbol = "[x ](bold red)"
 
 [git_status]
