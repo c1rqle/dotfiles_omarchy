@@ -1,6 +1,6 @@
   general.import = [
     # "~/.config/alacritty/themes/themes/ayu_dark.toml"
-    "/home/tb/.config/alacritty/themes/themes/aura.toml"
+     "~/.config/alacritty/themes/themes/aura.toml"
   ]
 
 # Reload this config on save

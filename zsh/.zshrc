@@ -6,7 +6,7 @@
 
 #_____________________________________
 # Starship handles most of the appearance. LS_COLORS and LSD are for bonus colours :)
-  export LS_COLORS="$(vivid generate tokyonight-night)"
+  #export LS_COLORS="$(vivid generate tokyonight-night)"
 
 #_____________________________________
 # oh-my-zsh update behaviour
