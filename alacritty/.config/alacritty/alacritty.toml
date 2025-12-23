@@ -1,6 +1,5 @@
   general.import = [
-    # "~/.config/alacritty/themes/themes/ayu_dark.toml"
-     "~/.config/alacritty/themes/themes/aura.toml"
+     "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
   ]
 
 # Reload this config on save
@@ -10,16 +9,15 @@
   TERM                        = "alacritty"
 
   [window]
+  title                       = "alacritty"
   decorations                 = "transparent"
+  startup_mode                = "Windowed"
   decorations_theme_variant   = "Dark"
+  resize_increments           = false
   dynamic_padding             = true
   dynamic_title               = true
   opacity                     = 0.94
-  startup_mode                = "Windowed"
-  title                       = "alacritty"
   blur                        = true
-  resize_increments           = false
-  #option_as_alt               = "OnlyLeft"
 
   [window.dimensions]
   columns = 0
@@ -33,7 +31,7 @@
   history = 30000
 
   [font]
-  builtin_box_drawing = false
+  builtin_box_drawing = true
   size                = 15
 
   [font.normal]
@@ -53,12 +51,12 @@
   style  = "Bold Italic"
 
   [font.glyph_offset]
-  x = 3
+  x = 5
   y = 1
 
   [font.offset]
   x = 2
-  y = 5
+  y = 6
   
   [bell]
   animation = "EaseOutExpo"
@@ -71,16 +69,15 @@
   semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
   [cursor]
+  style             = "Underline"
+  vi_mode_style 	  = "Beam"
   unfocused_hollow  = true
-  style             = "Beam"
-  vi_mode_style 	  = "None"
 
   [mouse]
   hide_when_typing  = true
 
   [terminal]
   shell = { program = "/bin/zsh", args = ["-l"] }
-
 
   [[hints.enabled]]
   command           = "xdg-open" # On Linux/BSD
@@ -97,3 +94,7 @@
   persistent_logging = false
   print_events       = false
   render_timer       = false
+
+  [colors]
+  selection = { text = "#191724", background = "#61AFEF" }
+

@@ -8,7 +8,7 @@ hide_action_hints = false                                                    # g
 "default" = { input = " Search...", list = "No Results" } # placeholders for input and empty list, key is the providers name, so f.e. "desktopapplications" or "menus:other"
 
 [keybinds]
-quick_activate = []
+quick_activate = ["F1", "F2",]
 
 [columns]
 symbols = 1 # providers to be queried by default
@@ -18,11 +18,17 @@ max_results = 256 # 256 should be enough for everyone
 default = [
   "desktopapplications",
   "websearch",
+  #"runner",
+  "calc",
 ]
 
 [[providers.prefixes]]
 prefix = "/"
 provider = "providerlist"
+
+[[providers.prefixes]]
+prefix = "|"
+provider = "runner"
 
 [[providers.prefixes]]
 prefix = "."
@@ -41,5 +47,9 @@ prefix = "s:"
 provider = "websearch"
 
 [[providers.prefixes]]
-prefix = ","
+prefix = ",,"
 provider = "clipboard"
+
+[[emergencies]]
+text = "Restart Walker"
+command = "omarchy-restart-walker"

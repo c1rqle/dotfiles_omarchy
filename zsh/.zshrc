@@ -5,18 +5,12 @@
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #_____________________________________
-# Starship handles most of the appearance. LS_COLORS and LSD are for bonus colours :)
-  #export LS_COLORS="$(vivid generate tokyonight-night)"
+  export LS_COLORS="$(vivid generate snazzy)"
 
 #_____________________________________
-# oh-my-zsh update behaviour
   zstyle ':omz:update' mode auto
 
 #_____________________________________
-#1. autocd=removes need for 'cd'. #2. extendglob=extra pattern operators like ^, ~, etc. in filename patterns. 
-#3. nomatch=print error instead of passing command if no match. #4. notify=Makes background job status 
-# messages appear immediately when they change. 
-#5. unsetopt beep turns off the terminal bell #6. bindkey -v switches the line editor to vi mode
   setopt autocd extendedglob nomatch notify
   unsetopt beep
   bindkey -v

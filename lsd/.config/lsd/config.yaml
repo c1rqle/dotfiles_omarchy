@@ -1,71 +1,70 @@
 #_____________________________________
 # Possible values: never, auto, always
-  color:
-    when: auto
-    theme: default
+color:
+  when: auto
+  theme: default
 
 #_____________________________________
-# Possible values: fancy, unicode (in case i wanna switch ⟵ 🡺 ⇨ ➩  ➟ ➟)
-  icons:
-    when: always
-    theme: fancy
-    separator: "  › "
+# Possible values: fancy, unicode (in case i wanna switch ⟵ 🡺 ⇨ ➩  ➟ ➟ )
+icons:
+  when: always
+  theme: fancy
+  separator: " ➟ "
 
 #_____________________________________
 # Whether to omit showing symlink targets
-  no-symlink: false
-  symlink-arrow: "􀉤 " 
-  hyperlink: always
+no-symlink: false
+symlink-arrow: " 􀉤  "
+hyperlink: always
 
 #_____________________________________
 # Whether to add indicator characters to certain listed files.
-  indicators: true
+indicators: true
 
 #_____________________________________
 # How lists are displayed
-  header: false
-  date: relative
-  size: short
+header: false
+date: relative
+size: short
 
 #_____________________________________
 # Whether to show quotes on filenames.
-  literal: true
+literal: true
 
 #_____________________________________
 # Possible values: grid, tree, oneline
-  layout: grid
-  total-size: false
+layout: grid
+total-size: false
 
 #_____________________________________
 # Possible column: extension, name, time, size, version
 # possible grouping: first, last, none
-  sorting:
-    column: time
-    reverse: true
-    dir-grouping: last
+sorting:
+  column: time
+  reverse: true
+  dir-grouping: last
 
 #_____________________________________
 # List view column items.
-  blocks:
-    - size
-    - date
-    - name
-  # - git
-  ignore-globs:
-    - .bashrc
-    - .lesshst
-    - .bash_profile
-    - .bash_logout
-    - .bash_history
-    - .bitwarden-ssh-agent.sock
-    - .npm
-    - .tldrc
-    - .aspnet
-    - .DS_Store
-    - .zsh_history
-    - .rustup
-    - .z
-    - .zcompdump
-    - .zcompdump-omarchy-5.9
-    - .zcompdump-omarchy-5.9.zwc
-
+blocks:
+  - size
+  - date
+  - name
+# - git
+ignore-globs:
+  - .bashrc
+  - .lesshst
+  - .bash_profile
+  - .bash_logout
+  - .bash_history
+  - .bitwarden-ssh-agent.sock
+  - .npm
+  - .tldrc
+  - .aspnet
+  - .DS_Store
+  - .zsh_history
+  - .rustup
+  - .z
+  - .zcompdump
+  - .zcompdump-omarchy-5.9
+  - .zcompdump-omarchy-5.9.zwc

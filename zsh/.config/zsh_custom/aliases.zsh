@@ -8,7 +8,8 @@
   alias vim='nvim'
   alias mkdir='mkdir -p'
 
-  alias img='kitty +kitten icat'
+  alias img='imv'
+  alias open='nautilus'
 
   alias vpn='sudo surfshark-vpn'
   alias vpnoff='sudo surfshark-vpn down'
