@@ -5,7 +5,7 @@
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #_____________________________________
-  export LS_COLORS="$(vivid generate snazzy)"
+  #export LS_COLORS="$(vivid generate tokyonight-storm)"
 
 #_____________________________________
   zstyle ':omz:update' mode auto

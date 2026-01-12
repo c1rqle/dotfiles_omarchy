@@ -8,7 +8,7 @@
   alias vim='nvim'
   alias mkdir='mkdir -p'
 
-  alias img='imv'
+  alias img='tacentview'
   alias open='nautilus'
 
   alias vpn='sudo surfshark-vpn'

@@ -1,5 +1,5 @@
   general.import = [
-     "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+     "~/.config/alacritty/themes/themes/thelovelace.toml"
   ]
 
 # Reload this config on save
@@ -16,7 +16,7 @@
   resize_increments           = false
   dynamic_padding             = true
   dynamic_title               = true
-  opacity                     = 0.94
+  opacity                     = 0.90
   blur                        = true
 
   [window.dimensions]
@@ -95,6 +95,7 @@
   print_events       = false
   render_timer       = false
 
-  [colors]
-  selection = { text = "#191724", background = "#61AFEF" }
+  [colors] 
+  #selection = { text = "#191724", background = "#61AFEF" }
+  selection = { text = "#191724", background = "#9A7AD4" }
 
