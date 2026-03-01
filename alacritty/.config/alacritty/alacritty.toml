@@ -99,3 +99,6 @@
   #selection = { text = "#191724", background = "#61AFEF" }
   selection = { text = "#191724", background = "#9A7AD4" }
 
+
+  #[terminal]
+  #osc52 = "CopyPaste"
