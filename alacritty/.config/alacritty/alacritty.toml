@@ -78,6 +78,20 @@
 
   [terminal]
   shell = { program = "/bin/zsh", args = ["-l"] }
+  osc52 = "CopyPaste"
+
+  [keyboard]
+  bindings = [
+    # Control+C/V (works like most Linux apps)
+    { key = "C", mods = "Control", action = "Copy" },
+    { key = "V", mods = "Control", action = "Paste" },
+    # Super+C/V (Mac-style, for muscle memory)
+    { key = "C", mods = "Super", action = "Copy" },
+    { key = "V", mods = "Super", action = "Paste" },
+    # Traditional Insert shortcuts
+    { key = "Insert", mods = "Shift", action = "Paste" },
+    { key = "Insert", mods = "Control", action = "Copy" },
+  ]
 
   [[hints.enabled]]
   command           = "xdg-open" # On Linux/BSD
