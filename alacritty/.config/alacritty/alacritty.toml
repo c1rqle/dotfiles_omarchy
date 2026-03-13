@@ -83,8 +83,8 @@
   [keyboard]
   bindings = [
     # Control+C/V (works like most Linux apps)
-    { key = "C", mods = "Control", action = "Copy" },
-    { key = "V", mods = "Control", action = "Paste" },
+    #  { key = "C", mods = "Control", action = "Copy" },
+    #{ key = "V", mods = "Control", action = "Paste" },
     # Super+C/V (Mac-style, for muscle memory)
     { key = "C", mods = "Super", action = "Copy" },
     { key = "V", mods = "Super", action = "Paste" },
