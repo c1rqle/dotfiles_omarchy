@@ -26,6 +26,14 @@ matches:
         params:
           layout: "Folder name: [[folder]]"
 
+  - trigger: ":topi"
+    replace: "scp -r {{form2.folder}} tb@piserver.local:/media/jellyfin/Shows"
+    vars:
+      - name: form2
+        type: form
+        params:
+          layout: "Folder name: [[folder]]"
+
   - trigger: ":div"
     replace: "<div>$|$</div> "
 
