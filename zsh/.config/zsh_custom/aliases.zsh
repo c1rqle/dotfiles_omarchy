@@ -14,6 +14,7 @@
   alias vpn='sudo surfshark-vpn'
   alias vpnoff='sudo surfshark-vpn down'
 
+  alias pacman='sudo pacman'
   alias sysctl='sudo systemctl'
   alias nm='sudo NetworkManager'
 
