@@ -1,0 +1,43 @@
+# Contact info
+
+matches:
+  - trigger: "_2k"
+    replace: "tonyberg2k@gmail.com"
+
+  - trigger: "_biz"
+    replace: "bizn@tuta.com"
+
+  - trigger: "_tb"
+    replace: "tony.b@tutamail.com"
+
+  - trigger: "_cir"
+    replace: "cirqle@tuta.com"
+
+  - trigger: "_tobe"
+    replace: "tobe@tuta.com"
+
+  - trigger: "_social"
+    replace: "cirqle_social@tutanota.de"
+    word: true
+
+  - trigger: "_gust"
+    replace: "gustalt@tuta.io"
+
+  - trigger: "_fake"
+    replace: "gustav.oskar471@emailhub.kr"
+    word: true
+
+  - trigger: "_adr"
+    replace: "Mannsverk 4"
+
+  - trigger: "_nr"
+    replace: "5094"
+
+  - trigger: "_sted"
+    replace: "Bergen"
+
+  - trigger: "_pers"
+    replace: "11049029987"
+
+  - trigger: "_tlf"
+    replace: "46123053"

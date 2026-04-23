@@ -1,0 +1,116 @@
+# terminal things
+
+matches:
+  - trigger: "ytdl"
+    replace: "yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' '$|$'"
+
+  - trigger: "-tm"
+    replace: "tmux attach; tmux"
+
+  - trigger: "sshmac"
+    replace: "ssh tb@mbp.local"
+
+  - trigger: "fdserv"
+    replace: "systemctl list-units --type=service | grep '$|$'"
+
+  - trigger: "killqbit"
+    replace: "fkill qbittorrent"
+
+  - trigger: "cdava"
+    replace: "cd /etc/nginx/sites-available"
+
+  - trigger: "testnginx"
+    replace: "sudo nginx -t"
+
+  - trigger: "reloadnginx"
+    replace: "sudo systemctl reload nginx"
+
+  - trigger: "cdava"
+    replace: "cd /etc/nginx/sites-available"
+
+  - trigger: "cdst"
+    replace: "cd /home/tb/dotfiles_omarchy/starship/.config/starship/"
+
+  - trigger: "cdala"
+    replace: "cd ~/dotfiles_omarchy/alacritty/.config/alacritty/"
+
+  - trigger: "cdesp"
+    replace: "cd /home/tb/dotfiles_omarchy/espanso/.config/espanso/match/packages/"
+
+  - trigger: ":cdesp"
+    replace: "cd ~/.config/espanso/match/"
+    injections:
+      - type: keyboard
+        key: enter
+
+  - trigger: "cdhyp"
+    replace: "cd /home/tb/dotfiles_omarchy/hypr/.config/hypr"
+
+  - trigger: "cdgh"
+    replace: "cd /home/tb/dotfiles_omarchy/ghostty/.config/ghostty"
+
+  - trigger: "cdtm"
+    replace: "cd /home/tb/dotfiles_omarchy/tmux/.config/tmux"
+
+  - trigger: "cdway"
+    replace: "cd /home/tb/dotfiles_omarchy/waybar/.config/waybar"
+
+  - trigger: "cdwalk"
+    replace: "cd /home/tb/dotfiles_omarchy/walker/.config/walker"
+
+  - trigger: ":logout"
+    replace: "loginctl kill-user tb"
+
+  - trigger: ":bt"
+    replace: "bzmenu -l walker"
+
+  - trigger: "icat"
+    replace: "kitty +kitten icat $|$"
+    word: true
+
+  - trigger: ":mkdir"
+    replace: "mkdir -p {{form1.folder}} && cd {{form1.folder}}"
+    vars:
+      - name: form1
+        type: form
+        params:
+          layout: "Folder name: [[folder]]"
+
+  - trigger: "-tarzip"
+    replace: "tar --zstd -cf {{DirName.folder}}.tar.zst $|$ "
+    vars:
+      - name: DirName
+        type: form
+        params:
+          layout: "Folder name: [[folder]]"
+
+  - trigger: "-tarunzip"
+    replace: "tar --zstd -xf $|$"
+
+  - trigger: ":div"
+    replace: "<div>$|$</div> "
+
+  - trigger: ":grep"
+    replace: "| grep '$|$' "
+
+  - trigger: ":less"
+    replace: "| less "
+
+  - trigger: ":btctl"
+    replace: "bluetoothctl"
+
+  - trigger: ":cht"
+    replace: "curl cheat.sh/"
+
+  - trigger: "tarzip563455"
+    replace: "tar --zstd -cf {{NameOfZip.folder}}.tar.zst shadow-drive_everything{{jelly.folder}}/"
+    vars:
+      - name: NameOfZip
+        type: form
+        params:
+          layout: |
+            Select folder:
+            [[folder]]
+          choice:
+            folder:
+              - S

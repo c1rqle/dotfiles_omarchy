@@ -1,0 +1,21 @@
+matches:
+  - trigger: "sshpi"
+    replace: "ssh tb@piserver.local"
+
+  - trigger: "piip"
+    replace: "tb@192.168.10.169"
+
+  - trigger: "jeshows"
+    replace: "tb@piserver.local:/media/usb/jellyfin/Shows/"
+
+  - trigger: "jemovies"
+    replace: "tb@piserver.local:/media/usb/jellyfin/Movies/"
+
+  - trigger: "jerestart"
+    replace: "cd /media/jellyfin && docker compose down; docker compose up -d"
+
+  - trigger: "jestart"
+    replace: "ssh -t tb@piserver.local 'sudo mount -a && cd /media/jellyfin && docker compose down && docker compose up -d'"
+
+  - trigger: "findservice"
+    replace: "systemctl list-units --type=service | grep "
