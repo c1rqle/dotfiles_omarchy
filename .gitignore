@@ -1,2 +1,8 @@
-espanso/.config/espanso/match/packages/personal/
-espanso/.config/espanso/match/packages/terminal/
+espanso/.config/match/packages/personal/package.yml
+espanso/.config/match/packages/terminal/package.yml
+espanso/.config/match/packages/ssh/package.yml
+nushell/.config/nushell/history.txt
+nushell/.config/nushell/config.nu
+nushell/.config/nushell/env.nu
+.claude
+docs

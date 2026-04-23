@@ -8,11 +8,12 @@
   alias vim='nvim'
   alias mkdir='mkdir -p'
 
+  alias vpns='sudo surfshark-vpn status'
+  alias vpna='sudo surfshark-vpn attack'
+  alias vpnd='sudo surfshark-vpn down'
+
   alias img='tacentview'
   alias open='nautilus'
-
-  alias vpn='sudo surfshark-vpn'
-  alias vpnoff='sudo surfshark-vpn down'
 
   alias pacman='sudo pacman'
   alias sysctl='sudo systemctl'
