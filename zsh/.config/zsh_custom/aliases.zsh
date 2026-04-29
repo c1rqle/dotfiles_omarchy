@@ -7,10 +7,14 @@
 #____________________________
   alias vim='nvim'
   alias mkdir='mkdir -p'
+  alias rs='rsync -avP'
+  alias rscp='rsync -avzP'
 
   alias vpns='sudo surfshark-vpn status'
   alias vpna='sudo surfshark-vpn attack'
   alias vpnd='sudo surfshark-vpn down'
+
+  alias yayi='yay -Si'
 
   alias img='tacentview'
   alias open='nautilus'

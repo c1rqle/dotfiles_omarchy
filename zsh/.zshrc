@@ -63,3 +63,6 @@
   eval "$(zoxide init --cmd c zsh)"
   eval "$(starship init zsh)"
 
+
+# Created by `pipx` on 2026-04-23 16:20:35
+export PATH="$PATH:/home/tb/.local/bin"
