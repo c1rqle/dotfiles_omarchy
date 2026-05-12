@@ -6,10 +6,10 @@ matches:
     replace: "tb@192.168.10.169"
 
   - trigger: "jeshows"
-    replace: "tb@piserver.local:/media/usb/jellyfin/Shows/"
+    replace: "tb@piserver.local:/media/usb/shows/"
 
   - trigger: "jemovies"
-    replace: "tb@piserver.local:/media/usb/jellyfin/Movies/"
+    replace: "tb@piserver.local:/media/usb/movies/"
 
   - trigger: "jerestart"
     replace: "cd /media/jellyfin && docker compose down; docker compose up -d"
