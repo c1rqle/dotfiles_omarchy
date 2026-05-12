@@ -9,6 +9,7 @@
   alias mkdir='mkdir -p'
   alias rs='rsync -avP'
   alias rscp='rsync -avzP'
+  alias df='df -h'
 
   alias vpns='sudo surfshark-vpn status'
   alias vpna='sudo surfshark-vpn attack'
